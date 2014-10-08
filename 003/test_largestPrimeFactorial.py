@@ -5,6 +5,17 @@ class TestLargestPrimeFactorial(unittest.TestCase):
 	def setUp(self):
 		self.largestPrimeFactorial = LargestPrimeFactorial()
 
+	def test_isPrime(self):
+	'''
+		isPrime(7)
+		This Method checks if a number is a prime
+	'''
+		msgFalse = '{} is not a prime'
+		msgTrue = '{} is a prime'
+		self.assertTrue(self.largestPrimeFactorial.isPrime(7), msgTrue)
+		self.assertTrue(self.largestPrimeFactorial.isPrime(15), msgFalse)
+		self.assertTrue(self.largestPrimeFactorial.isPrime(788), msgFalse)
+
 	def test_calcPrimesTo(self):
 	'''
 		calcPrimesTo(20)
