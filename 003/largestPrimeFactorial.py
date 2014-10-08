@@ -17,6 +17,7 @@ class LargestPrimeFactorial(object):
 			if self._isPrime(i):
 				returnVal.append(i)
 			i += 1
+		print('Got all the primes')
 		return returnVal
 
 	def _calcFactorsOf(self, thisList, factor):
@@ -30,3 +31,10 @@ class LargestPrimeFactorial(object):
 		allFactorialPrimes = self._calcFactorsOf(self._calcPrimesTo(n), n)
 		print(allFactorialPrimes)
 		return max(allFactorialPrimes)
+
+def main():
+	largestPrimeFactorial = LargestPrimeFactorial()
+	largestPrimeFactorial.calc(600851475143)
+
+if __name__ == '__main__':
+	main()
