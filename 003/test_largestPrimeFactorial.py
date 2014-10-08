@@ -19,6 +19,7 @@ class TestLargestPrimeFactorial(unittest.TestCase):
 	def test_calcPrimesTo(self):
 	'''
 		calcPrimesTo(20)
+		uses isPrime
 		This Mehtod calculates all the primes smaller than half of the input 
 	'''
 		msg = 'calcPrimesTo(20) should return [3, 5, 7, 11, 13, 17]'
