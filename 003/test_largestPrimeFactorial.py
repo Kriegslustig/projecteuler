@@ -37,12 +37,12 @@ class TestLargestPrimeFactorial(unittest.TestCase):
 
 	def test_calc(self):
 		'''
-			calc(13185)
+			calc(13195)
 			This Method is sort of the factory of largestPrimeFactorial it first uses calcPrimesTo and with the result of that it executes calcFactorsOf. And at last it gets the highest value in the return of calcFactorsOf
 		'''
-		msg = 'calc(13185) should return 13185'
-		calc13185 = self.largestPrimeFactorial.calc(13185)
-		self.assertTrue(calc13185 == 13185, msg)
+		msg = 'calc(13195) should return 29'
+		calc13195 = self.largestPrimeFactorial.calc(13195)
+		self.assertTrue(calc13195 == 29, msg)
 
 if __name__ == '__main__':
 	unittest.main()
