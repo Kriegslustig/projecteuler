@@ -13,7 +13,7 @@ class CalcMultiplesOfXAndY(object):
 
 	def _calcMulti(self, n):
 		returnVal = []
-		i = 0
+		i = 2
 		while i * n < self.max:
 			returnVal.append(i * n)
 			i += 1
