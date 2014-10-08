@@ -1,8 +1,10 @@
-class CalcMultiplesOfXAndY:
-	def __init__(self, x, y):
+#!/usr/bin/python
+
+class CalcMultiplesOfXAndY(object):
+	def __init__(self, x, y, thismax = 1000):
 		self.x = x
 		self.y = y
-		self.max = 1000
+		self.max = thismax
 
 	def calc(self):
 		self.multiX = self._calcMulti(self.x)
@@ -17,6 +19,9 @@ class CalcMultiplesOfXAndY:
 			i += 1
 		return returnVal
 
-# if __name__ == '__main__':
-# 	thisCalc = CalcMultiplesOfXAndY(3, 5)
-# 	print thisCalc.calc()
+def main():
+	thisCalc = CalcMultiplesOfXAndY(3, 5)
+	print(thisCalc.calc())
+
+if __name__ == '__main__':
+	main()
