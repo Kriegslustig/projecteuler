@@ -29,7 +29,7 @@ class TestLargestPrimeFactorial(unittest.TestCase):
 	def test__calcFactorsOf(self):
 		'''
 			_calcFactorsOf([1, 2, 5, 7], 20)
-			This Method should takes a list of integers as the second argument, checks if the first argument is devisable by them and returns the ones that are.
+			This Method should takes a list of integers as the first argument, checks if the first argument is devisable by them and returns the ones that are.
 		'''
 		msg = '_calcFactorsOf([1, 2, 5, 7], 20) should return [1, 2, 5]'
 		test__calcFactorsOf20 = self.largestPrimeFactorial._calcFactorsOf([1, 2, 5, 7], 20)
@@ -38,7 +38,7 @@ class TestLargestPrimeFactorial(unittest.TestCase):
 	def test_calc(self):
 		'''
 			calc(13185)
-			This Method is the sort of the factory of largestPrimeFactorial it first uses calcPrimesTo and with the result of that it executes calcFactorsOf. And at last it gets the highest value in the return of calcFactorsOf
+			This Method is sort of the factory of largestPrimeFactorial it first uses calcPrimesTo and with the result of that it executes calcFactorsOf. And at last it gets the highest value in the return of calcFactorsOf
 		'''
 		msg = 'calc(13185) should return 13185'
 		calc13185 = self.largestPrimeFactorial.calc(13185)
