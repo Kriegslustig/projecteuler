@@ -18,3 +18,15 @@ class LargestPrimeFactorial(object):
 				returnVal.append(i)
 			i += 1
 		return returnVal
+
+	def _calcFactorsOf(self, thisList, factor):
+		returnVal = []
+		for item in thisList:
+			if factor % item == 0:
+				returnVal.append(item)
+		return returnVal
+
+	def calc(self, n):
+		allFactorialPrimes = self._calcFactorsOf(self._calcPrimesTo(n), n)
+		print(allFactorialPrimes)
+		return max(allFactorialPrimes)
